@@ -1,0 +1,125 @@
+/**
+* Name: Izza Marie Badano
+* Section: Fidelity
+* Year: 4th year
+*/
+
+import java.util.Scanner;
+public class RestoBar {
+	public static void main(String[] args) {
+		
+     Scanner in = new Scanner(System.in);
+	
+	int menu = 0, snacks = 0, beverages = 0, con = 0, price = 0, total = 0;
+	
+		do{
+		System.out.println(" Food Menu: ");
+		System.out.println(" ");
+		System.out.println("[1] - ChickenWings - 85.00");
+		System.out.println("[2] - Pancit Malabon - 55.00");
+		System.out.println("[3] - Pork Guisado - 70.00");
+		System.out.print("Choose your prefered order: ");
+				menu = in.nextInt();
+				System.out.println(" ");
+		
+		System.out.println(" Snacks: ");
+		System.out.println(" ");
+		System.out.println("[1] - French Fries - 40.00");
+		System.out.println("[2] - Cheese Burger - 55.00");
+		System.out.println("[3] - Hotdog - 30.00");
+		System.out.print("Choose your prefered snacks: ");
+				snacks = in.nextInt();
+				System.out.println(" ");
+			
+		System.out.println("Beverages: ");
+		System.out.println(" ");
+		System.out.println("[1] - Fruit Juice - 55.00");
+		System.out.println("[2] - Milktea - 70.00");
+		System.out.println("[3] - Softdrinks - 20.00");
+		System.out.println(" ");
+		System.out.print("Choose your prefered beverages: ");
+				beverages = in.nextInt();
+				System.out.println(" ");
+				
+		
+switch(menu){
+			
+			case 1:
+			price = 85;
+			total = price+total;
+			System.out.println("You ordered: ChickenWings"+" - "+price);
+			break;
+			case 2:
+			price = 55;
+			total = price+total;
+			System.out.println("You ordered: Pancit Malabon"+" - "+price);
+			break;
+			case 3:
+			price = 70;
+			total = price+total;
+			System.out.println("You ordered: Pork Guisado"+" - "+price);
+			break;
+			default:
+			System.out.println(" Invalid doesnt match in Menu");	
+		}
+		
+		
+switch(snacks){
+			
+			case 1:
+			price = 40;
+			total = price+total;
+			System.out.println("You ordered: French Fries"+" - "+price);
+			break;
+			case 2:
+			price = 55;
+			total = price+total;
+			System.out.println("You ordered: Cheese Burger"+" - "+price);
+			break;
+			case 3:
+			price = 30;
+			total = price+total;
+			System.out.println("You ordered: Hotdog"+" - "+price);
+			break;
+			default:
+			System.out.println(" Invalid doesnt match in Snacks");
+				}
+				
+				
+switch(beverages){
+			
+			case 1:
+			price = 55;
+			total = price+total;
+			System.out.println("You ordered: Fruit Juice"+" - "+price);
+			break;
+			case 2:
+			price = 70;
+			total = price+total;
+			System.out.println("You ordered: Milktea"+" - "+price);
+			break;
+			case 3:
+			price = 20;
+			total = price+total;
+			System.out.println("You ordered: Softdrinks "+" - "+price);
+			break;
+			default:
+			System.out.println(" Invalid doesnt match in Beverages");
+			
+	}
+			System.out.println(" ");
+			System.out.println("Total Price: "+total);
+			System.out.println(" ");
+	
+			System.out.println(" Do you want to order agian? [1] - YES / [2] - NO: ");
+			con= in.nextInt();
+	
+	}while (con==1);
+			
+			
+			
+			
+		
+	}
+}
+
