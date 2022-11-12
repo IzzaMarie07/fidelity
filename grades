@@ -1,0 +1,46 @@
+/**
+* Name: Izza Marie A. Badano
+* Section: Fidelity
+* Year: 4th Year
+*/
+
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		 Scanner i = new Scanner(System.in);
+		int f = 0, total = 0, grade = 0, averrage = 0, con = 0;
+	
+		do{	
+		
+		for (f = 0; f < 3; f++){
+			System.out.println("Enter a number: ");
+			grade= i.nextInt();
+			total += grade;
+		
+}		while (f<3);
+		total=total/3;
+		System.out.println(" Average: "+total);
+		
+		if (total>=91&&total<=100){
+		System.out.println('A');
+		}else if (total>=81&&total<=90){
+		System.out.println('B');
+		}else if (total>=71&&total<=80){
+		System.out.println('C');
+		} else if (total>=1&&total<=70){
+		System.out.println('D');
+		}else if (total<=0){
+		System.out.println('E');
+}
+		
+			System.out.print("Do you want to calculate the average agian 1- yes / 2- no: ");
+			con=i.nextInt();
+
+
+}			while (con==1);
+
+}
+
+	
+	
+}
